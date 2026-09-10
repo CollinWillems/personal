@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <style>
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+    </style>
+    <title>Collin E. Willems - Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <img src="./images/profile.png" alt="Profile Photo">
+            <h1>Collin E. Willems</h1>
+            <p style="font-family: 'Courier New', Courier, monospace; color: navy">Software Engineering Student | Iowa State University</p>
+            <p>I am a Software Engineering student at Iowa State University and an aspiring software
+            engineer. I enjoy building things that people actually use, from web applications to
+            embedded and game projects, and I am especially interested in how good user interface
+            design makes software easier to use for normal users.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="./images/project1.png" alt="CyBet project screenshot">
+                <h3>CyBet - Casino App</h3>
+                <!-- I had Claude assist in writing a summary of my work done in COMS 3090 below, I did not use AI for any other part of this assignment -->
+                <p>CyBet is a casino platform built by a four person team for COMS 3090
+                (Software Development Practices). It pairs an Android front end written in Java with
+                a Spring Boot REST backend using JPA/Hibernate over a MySQL database. Users can create
+                accounts, add friends, message each other in DMs and group chats, earn achievements,
+                climb leaderboards, and play casino games including blackjack, slots, and Crazy Eights.
+                My main contributions were the blackjack game and the real time multiplayer table
+                system, where players host and join tables over WebSockets, plus the group chat
+                messaging screens. The team worked out of a GitLab repository with a branch per issue
+                workflow, merge request reviews, a CI pipeline, JavaDoc, and JaCoCo test coverage
+                reports.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach me at collinw2024@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Collin E. Willems</p>
+    </footer>
+</body>
+</html>
